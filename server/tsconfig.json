@@ -1,0 +1,24 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "forceConsistentCasingInFileNames": true,
+    "esModuleInterop": true,
+    "outDir": "dist",
+    "rootDir": "./",
+    "target": "ESNext",
+    "skipLibCheck": true,
+    "strict": true,
+    "sourceMap": true,
+    "lib": ["ESNext"],
+    "baseUrl": "./",
+    "paths": {
+      "@server/*": ["./server/*"],
+      "@controllers/*": ["./server/controllers/*"],
+      "@routes/*": ["./server/routes/*"],
+      "@data/*": ["./data/*"],
+      "@helpers/*":["./server/helpers/methods"]
+    }
+  },
+  "exclude": ["node_modules"]
+}
